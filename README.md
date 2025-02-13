@@ -14,7 +14,7 @@ npm install math-problems
 import { area, toCelsius, isEven, populationDensity, population } from 'math-problems';
 
 // Calculate the area of a circle with radius 5
-console.log(area.circle(5)); // { area: 78 }
+console.log(area.circle(5)); // 78
 
 // Convert 100°F to Celsius
 console.log(toCelsius(100)); // 37
