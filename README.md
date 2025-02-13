@@ -11,7 +11,13 @@ npm install math-problems
 ## Usage
 
 ```javascript
-import { area, toCelsius, isEven, populationDensity, population } from 'math-problems';
+import {
+  area,
+  toCelsius,
+  isEven,
+  populationDensity,
+  population,
+} from 'math-problems';
 
 // Calculate the area of a circle with radius 5
 console.log(area.circle(5)); // 78
@@ -32,6 +38,7 @@ console.log(population.br.sp); // 11452000
 ## API Documentation
 
 ### 📐 Area Calculations
+
 All area functions return an object with a floored `area` value.
 
 - **Rectangle**  
@@ -55,6 +62,7 @@ All area functions return an object with a floored `area` value.
   `area.circle(3) ➔ 28`
 
 ### 🌡️ Temperature Conversions
+
 Convert between Celsius (°C), Fahrenheit (°F), and Kelvin (K).
 
 - **toCelsius**  
@@ -76,6 +84,7 @@ Convert between Celsius (°C), Fahrenheit (°F), and Kelvin (K).
   `toKelvin(32, 'F') ➔ 273`
 
 ### 🔢 Number Utilities
+
 - **isEven(number)**  
   Returns `true` if the number is even.
 
@@ -90,6 +99,7 @@ Convert between Celsius (°C), Fahrenheit (°F), and Kelvin (K).
   Math.PI constant (≈3.14159).
 
 ### 📊 Population Statistics
+
 - **populationDensity(population, area)**  
   Returns density (people per unit area).
 
@@ -102,11 +112,12 @@ Convert between Celsius (°C), Fahrenheit (°F), and Kelvin (K).
 - **Population Data**  
   Pre-defined population figures (as of Feb 2025):
   ```javascript
-  population.br.sp   // Brazil São Paulo: 11,452,000
-  population.us.ny   // USA New York: 20,201,249
+  population.br.sp; // Brazil São Paulo: 11,452,000
+  population.us.ny; // USA New York: 20,201,249
   ```
 
 ## Contributing
+
 Contributions are welcome! Please follow the [contribution guidelines](https://github.com/igorwastaken/math-utils/blob/main/CONTRIBUTING.md).
 
 1. Clone the repository:
@@ -123,5 +134,6 @@ Contributions are welcome! Please follow the [contribution guidelines](https://g
    ```
 
 ## License
+
 MIT © Igor Figueiredo  
 [Full License Text](LICENSE)
