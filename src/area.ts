@@ -10,10 +10,8 @@ export const area = {
    *
    * base * height
    */
-  rect: (base: number, height: number): AreaResult => {
-    return {
-      area: Math.floor(base * height),
-    };
+  rect: (base: number, height: number): number => {
+    return Math.floor(base * height);
   },
   /**
    * @param base Size of the base of the triangle
@@ -21,10 +19,8 @@ export const area = {
    *
    * (base * height) / 2
    */
-  triangle: (base: number, height: number): AreaResult => {
-    return {
-      area: Math.floor((base * height) / 2),
-    };
+  triangle: (base: number, height: number): number => {
+    return Math.floor((base * height) / 2);
   },
   /**
    * @param D larger diagonal
@@ -32,10 +28,8 @@ export const area = {
    *
    * (D * d) / 2
    */
-  rhombus: (D: number, d: number): AreaResult => {
-    return {
-      area: Math.floor((D * d) / 2),
-    };
+  rhombus: (D: number, d: number): number => {
+    return Math.floor((D * d) / 2);
   },
   /**
    * @param B Larger base
@@ -44,24 +38,15 @@ export const area = {
    *
    * ((B + b) * height) / 2
    */
-  trapezoid: (B: number, b: number, height: number): AreaResult => {
-    return {
-      area: Math.floor(((B + b) * height) / 2),
-    };
+  trapezoid: (B: number, b: number, height: number): number => {
+    return Math.floor(((B + b) * height) / 2);
   },
   /**
    * @param radius Circle radius
    *
    * π * (radius * radius)
    */
-  circle: (radius: number): AreaResult => {
-    return {
-      area: Math.floor(PI * (radius * radius)),
-    };
+  circle: (radius: number): number => {
+    return Math.floor(PI * (radius * radius));
   },
-};
-
-export type AreaResult = {
-  area?: number;
-  perimeter?: number;
 };

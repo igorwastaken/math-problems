@@ -14,7 +14,7 @@ npm install math-problems
 import { area, toCelsius, isEven, populationDensity, population } from 'math-problems';
 
 // Calculate the area of a circle with radius 5
-console.log(area.circle(5)); // { area: 78 }
+console.log(area.circle(5)); // 78
 
 // Convert 100°F to Celsius
 console.log(toCelsius(100)); // 37
@@ -36,23 +36,23 @@ All area functions return an object with a floored `area` value.
 
 - **Rectangle**  
   `rect(base: number, height: number)`  
-  `area.rect(4, 5) ➔ { area: 20 }`
+  `area.rect(4, 5) ➔ 20`
 
 - **Triangle**  
   `triangle(base: number, height: number)`  
-  `area.triangle(4, 5) ➔ { area: 10 }`
+  `area.triangle(4, 5) ➔ 10`
 
 - **Rhombus**  
   `rhombus(D: number, d: number)`  
-  `area.rhombus(8, 6) ➔ { area: 24 }`
+  `area.rhombus(8, 6) ➔ 24`
 
 - **Trapezoid**  
   `trapezoid(B: number, b: number, height: number)`  
-  `area.trapezoid(10, 6, 5) ➔ { area: 40 }`
+  `area.trapezoid(10, 6, 5) ➔ 40`
 
 - **Circle**  
   `circle(radius: number)`  
-  `area.circle(3) ➔ { area: 28 }`
+  `area.circle(3) ➔ 28`
 
 ### 🌡️ Temperature Conversions
 Convert between Celsius (°C), Fahrenheit (°F), and Kelvin (K).
