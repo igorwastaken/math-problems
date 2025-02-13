@@ -1,0 +1,50 @@
+{
+  "name": "math-problems",
+  "version": "0.0.1",
+  "description": "Solve math problems easily.",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "ci": "npm run build && npm run check-format && npm run check-exports",
+    "lint": "tsc",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack .",
+    "local-release": "npm run ci && changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorwastaken/math-utils.git"
+  },
+  "keywords": [
+    "math",
+    "school",
+    "utils"
+  ],
+  "author": "Igor Figueiredo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igorwastaken/math-utils/issues"
+  },
+  "homepage": "https://github.com/igorwastaken/math-utils#readme",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.3",
+    "@changesets/cli": "^2.27.12",
+    "prettier": "^3.5.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
