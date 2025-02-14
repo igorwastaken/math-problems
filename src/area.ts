@@ -1,4 +1,4 @@
-import { PI } from './numbers.js';
+import { PI, squared } from './numbers.js';
 
 /**
  * @description Calculate the area of geometric shapes
@@ -47,6 +47,6 @@ export const area = {
    * π * (radius * radius)
    */
   circle: (radius: number): number => {
-    return Math.floor(PI * (radius * radius));
+    return Math.floor(PI * squared(radius));
   },
 };
