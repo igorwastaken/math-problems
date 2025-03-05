@@ -53,7 +53,7 @@ export function regression(input: number[][]): RegressionOutput {
 
   let x,
     y,
-    m_divisor,
+    mDivisor,
     sumX = 0,
     sumY = 0,
     sumXY = 0,
@@ -76,9 +76,9 @@ export function regression(input: number[][]): RegressionOutput {
   }
 
   const m =
-    (m_divisor = input.length * sumXSquared - sumX * sumX) === 0
+    (mDivisor = input.length * sumXSquared - sumX * sumX) === 0
       ? 0
-      : (input.length * sumXY - sumX * sumY) / m_divisor;
+      : (input.length * sumXY - sumX * sumY) / mDivisor;
   const b = (sumY - m * sumX) / input.length;
 
   const polMatrix = [
