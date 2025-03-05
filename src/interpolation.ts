@@ -1,11 +1,11 @@
-export interface interpolationInput {
+export interface InterpolationInput {
   function: (input: number) => number;
   value: number;
   points: number[];
 }
 
 function getNewtonInterpolationB(
-  input: interpolationInput,
+  input: InterpolationInput,
   end: number,
   start: number,
 ): number {
@@ -21,11 +21,11 @@ function getNewtonInterpolationB(
 }
 
 /**
- * @param {interpolationInput} input Interpolation input
+ * @param {InterpolationInput} input Interpolation input
  *
  * @returns {number} Interpolation result through Newton Interpolation
  */
-export function interpolation(input: interpolationInput): number {
+export function interpolation(input: InterpolationInput): number {
   if (input.points.length < 1) {
     throw new Error('Points array must not be empty.');
   }
