@@ -1,6 +1,6 @@
 {
   "name": "math-problems",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Solve math problems easily with this utility library.",
   "main": "dist/index.js",
   "exports": {
