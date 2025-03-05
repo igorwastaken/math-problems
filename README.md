@@ -22,7 +22,7 @@ import {
 // Calculate the area of a circle with radius 5
 console.log(area.circle(5)); // 78
 
-// Convert 100°F to Celsius
+// Convert 73°F to Celsius
 console.log(toCelsius(73)); // 22.777... (repeating decimal)
 
 // Check if a number is even
