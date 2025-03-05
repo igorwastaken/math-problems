@@ -23,7 +23,7 @@ import {
 console.log(area.circle(5)); // 78
 
 // Convert 100°F to Celsius
-console.log(toCelsius(100)); // 37
+console.log(toCelsius(73)); // 22.777... (repeating decimal)
 
 // Check if a number is even
 console.log(isEven(4)); // true

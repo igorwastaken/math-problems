@@ -1,8 +1,8 @@
 function populationDensity(population: number, area: number): number {
-  return Math.floor(population / area);
+  return Math.max(population / area);
 }
 function birthRate(birth: number, population: number): number {
-  return Math.floor((birth * 1000) / population);
+  return Math.max((birth * 1000) / population);
 }
 function deathRate(death: number, population: number): number {
   return birthRate(death, population);

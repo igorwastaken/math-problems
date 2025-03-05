@@ -22,7 +22,7 @@ export function isOdd(number: number): boolean {
  * @returns The difference value between X and Y
  */
 export function difference(x: number, y: number): number {
-  return Math.floor(x - y);
+  return Math.max(x - y);
 }
 /**
  * @param x Target value

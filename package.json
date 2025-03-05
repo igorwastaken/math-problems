@@ -1,7 +1,7 @@
 {
   "name": "math-problems",
-  "version": "0.0.2",
-  "description": "Solve math problems easily.",
+  "version": "0.0.3",
+  "description": "Solve math problems easily with this utility library.",
   "main": "dist/index.js",
   "exports": {
     ".": {
@@ -31,14 +31,25 @@
   "keywords": [
     "math",
     "school",
-    "utils"
+    "utils",
+    "demography",
+    "data",
+    "geography",
+    "algorithm",
+    "typescript",
+    "javascript",
+    "area",
+    "util"
   ],
-  "author": "Igor Figueiredo",
+  "author": "Igor Figueiredo <suporte@igor.mom>",
+  "contributors": [
+    "nitcord"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/igorwastaken/math-utils/issues"
+    "url": "https://github.com/igorwastaken/math-problems/issues"
   },
-  "homepage": "https://github.com/igorwastaken/math-utils#readme",
+  "homepage": "https://github.com/igorwastaken/math-problems#readme",
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.3",
     "@changesets/cli": "^2.27.12",

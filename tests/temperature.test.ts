@@ -5,12 +5,12 @@ describe('Temperatures test', () => {
   test('Celsius to Fahrenheit', () => {
     const temperature = toFahrenheit(23);
 
-    expect(temperature).toBe(73);
+    expect(temperature).toBe(73.4);
   });
   test('Fahrenheit to Celsius', () => {
-    const temperature = toCelsius(73);
+    const temperature = toCelsius(73).toFixed(2);
 
-    expect(temperature).toBe(22);
+    expect(temperature).toBe('22.78');
   });
   test('Kelvin to Celsius', () => {
     const temperature = toCelsius(296.15, 'K');
@@ -20,7 +20,7 @@ describe('Temperatures test', () => {
   test('Celsius to Kelvin', () => {
     const temperature = toKelvin(23);
 
-    expect(temperature).toBe(296);
+    expect(temperature).toBe(296.15);
   });
   test('Fahrenheit to Kelvin', () => {
     const temperature = toKelvin(57, 'F');
