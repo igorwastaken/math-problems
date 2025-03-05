@@ -114,7 +114,7 @@ interpolation({
 ```
 
 - **regression(input: number[])**  
-  Regresses a set of data points.
+  Computes the linear and polynomial regression from a set of data points.
 
 ```js
 regression([
@@ -136,7 +136,7 @@ regression([
     b: 11.060810810810809,
     c: -0.34459459459459435
   }
-} 
+}
 ```
 
 ### 📊 Population Statistics
