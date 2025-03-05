@@ -5,46 +5,50 @@ import { PI, squared } from './numbers.js';
  */
 export const area = {
   /**
-   * @param base Size of the base of the rectangle
-   * @param height The height of the rectangle
+   * @param {number} base Size of the base of the rectangle
+   * @param {number} height The height of the rectangle
    *
-   * @returns base * height
+   * @returns {number} base * height
    */
   rect: (base: number, height: number): number => {
     return Math.floor(base * height);
   },
+
   /**
-   * @param base Size of the base of the triangle
-   * @param height The height of the triangle
+   * @param {number} base Size of the base of the triangle
+   * @param {number} height The height of the triangle
    *
-   * @returns (base * height) / 2
+   * @returns {number} (base * height) / 2
    */
   triangle: (base: number, height: number): number => {
     return Math.floor((base * height) / 2);
   },
+
   /**
-   * @param D larger diagonal
-   * @param d smaller diagonal
+   * @param {number} D larger diagonal
+   * @param {number} d smaller diagonal
    *
-   * @returns (D * d) / 2
+   * @returns {number} (D * d) / 2
    */
   rhombus: (D: number, d: number): number => {
     return Math.floor((D * d) / 2);
   },
+
   /**
-   * @param B Larger base
-   * @param b Smaller base
-   * @param height Trapezoid height
+   * @param {number} B Larger base
+   * @param {number} b Smaller base
+   * @param {number} height Trapezoid height
    *
-   * @returns ((B + b) * height) / 2
+   * @returns {number} ((B + b) * height) / 2
    */
   trapezoid: (B: number, b: number, height: number): number => {
     return Math.floor(((B + b) * height) / 2);
   },
+
   /**
-   * @param radius Circle radius
+   * @param {number} radius Circle radius
    *
-   * @returns π * (radius * radius)
+   * @returns {number} π * (radius * radius)
    */
   circle: (radius: number): number => {
     return Math.floor(PI * squared(radius));

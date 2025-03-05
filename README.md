@@ -98,6 +98,47 @@ Convert between Celsius (°C), Fahrenheit (°F), and Kelvin (K).
 - **PI**  
   Math.PI constant (≈3.14159).
 
+### 📊 Interpoolation and regression
+
+- **interpolation(input: { function: (number) => number, value: number, points: number[] })**  
+  Interpolates a set of data points from a function and value through Newton Interpolation.
+
+```js
+interpolation({
+  function: Math.log,
+  value: 2,
+  points: [1, 4, 6]
+})
+
+➔ 0.5658443469009827
+```
+
+- **regression(input: number[])**  
+  Computes the linear and polynomial regression from a set of data points.
+
+```js
+regression([
+  [-2, -1],
+  [1, 2],
+  [4, 59],
+  [-1, 4],
+  [3, 24],
+  [-4, -53]
+]);
+
+➔ {
+  linear: {
+    m: 10.97864768683274,
+    b: 4.00355871886121
+  },
+  polynomial: {
+    a: 6.689189189189188,
+    b: 11.060810810810809,
+    c: -0.34459459459459435
+  }
+}
+```
+
 ### 📊 Population Statistics
 
 - **populationDensity(population, area)**  
