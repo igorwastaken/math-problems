@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { area } from '../src/area.js';
+import { area } from '../src/index.js';
 import {
   PI,
   cathetus,
@@ -8,7 +8,7 @@ import {
   isEven,
   isOdd,
   squared,
-} from '../src/numbers.js';
+} from '../src/index.js';
 
 describe('Area Functions', () => {
   it('Rectangle area should be calculated correctly', () => {

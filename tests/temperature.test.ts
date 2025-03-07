@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { toCelsius, toFahrenheit, toKelvin } from '../src/temperatures.js';
+import { toCelsius, toFahrenheit, toKelvin } from '../src/index.js';
 
 describe('Temperature Conversion Functions', () => {
   it('Converts Celsius to Fahrenheit correctly', () => {
